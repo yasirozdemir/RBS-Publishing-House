@@ -1,0 +1,126 @@
+:root {
+  --body-color: #e0e4ef;
+  --section-color: #a3bfe7;
+  --bg-secondary-color: #bec6d9;
+  --text-color-main: #181d31;
+  --shadow-main: #181d31ab;
+  --text-color-secondary: #678983;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--body-color);
+  color: var(--text-color-main);
+  user-select: none;
+}
+
+#hero {
+  height: 100vh;
+  /* background: rgb(36, 0, 0);
+  background: -moz-radial-gradient(
+    circle,
+    rgba(36, 0, 0, 0) 0%,
+    rgba(249, 237, 105, 1) 0%,
+    rgba(240, 138, 93, 1) 50%,
+    rgba(240, 138, 93, 1) 100%
+  );
+  background: -webkit-radial-gradient(
+    circle,
+    rgba(36, 0, 0, 0) 0%,
+    rgba(249, 237, 105, 1) 0%,
+    rgba(240, 138, 93, 1) 50%,
+    rgba(240, 138, 93, 1) 100%
+  );
+  background: radial-gradient(
+    circle,
+    rgba(36, 0, 0, 0) 0%,
+    rgba(249, 237, 105, 1) 0%,
+    rgba(240, 138, 93, 1) 50%,
+    rgba(240, 138, 93, 1) 100%
+  ); */
+  /* filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#240000",endColorstr="#f08a5d",GradientType=1); */
+}
+
+nav {
+  background-color: var(--section-color);
+}
+
+#navbarDropdown {
+  background-color: var(--section-color);
+}
+
+#info {
+}
+
+#community {
+}
+
+.authorCard,
+.translatorCard {
+  padding-inline: 0;
+  overflow: hidden;
+  box-shadow: 0px 0px 3px 0px var(--text-color-main);
+  background-color: var(--bg-secondary-color);
+}
+
+.authorCard a,
+.translatorCard a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.authorBadge,
+.translatorBadge {
+  top: 2px;
+  left: 5px;
+}
+
+.authorBadge span,
+.translatorBadge span {
+  font-size: small;
+  border-radius: 0.8rem;
+  padding: 2px 8px;
+}
+
+.authorBadge span,
+.translatorBadge span {
+  background-color: #181d31;
+  color: var(--bg-secondary-color);
+}
+
+.authorPhoto,
+.translatorPhoto {
+  width: 100%;
+  padding-bottom: 100%;
+  overflow: hidden;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.authorName,
+.translatorName {
+  font-weight: 700;
+}
+
+/* .authorCardBody button,
+.translatorCardBody button {
+  border: none;
+  background-color: var(--section-color);
+  box-shadow: 0px 0px 2px 0px var(--shadow-main);
+  transition: all 100ms;
+}
+
+.authorCardBody button:hover,
+.translatorCardBody button:hover {
+  box-shadow: 0px 0px 2px 0px var (--text-color-main);
+  background-color: #b8cbe6;
+}
+
+.authorCardBody button:active,
+.translatorCardBody button:active {
+  transform: translateY(2px);
+} */
