@@ -9,6 +9,8 @@ const en = {
   translation: "Translation",
   author: "Author",
   translator: "Translator",
+  name: "Name",
+  poet: "Poet",
 };
 
 const fr = {
@@ -22,6 +24,8 @@ const fr = {
   translation: "Traduction",
   author: "Auteure",
   translator: "Traductrice",
+  name: "Nom",
+  poet: "Poète",
 };
 
 const de = {
@@ -35,6 +39,8 @@ const de = {
   translation: "Übersetzung",
   author: "Autor",
   translator: "Übersetzer",
+  name: "Nome",
+  poet: "Dichter",
 };
 
 const it = {
@@ -48,6 +54,8 @@ const it = {
   translation: "Traduzione",
   author: "Autore",
   translator: "Traduttore",
+  name: "Nome",
+  poet: "Poeta",
 };
 
 window.onload = () => {
@@ -90,5 +98,18 @@ const setLang = (lang) => {
     el.innerText = lang.translation;
   });
   console.log(lang.author);
+  document.querySelectorAll(".communityName").forEach((el) => {
+    switch (el.innerText) {
+      case "Author Name":
+        el.innerText = `${lang.author} ${lang.name}`;
+        break;
+      case "Translator Name":
+        el.innerText = `${lang.translator} ${lang.name}`;
+        break;
+      case "Poet Name":
+        el.innerText = `${lang.poet} ${lang.name}`;
+        break;
+    }
+  });
   console.log(lang.translator);
 };
