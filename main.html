@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Publishing House</title>
-    <link rel="shortcut icon" href="#" />
+    <title>LitSEa</title>
+    <link rel="shortcut icon" href="./assets/book-favicon.svg" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
@@ -20,11 +20,39 @@
   </head>
   <body>
     <main>
-      <section id="hero"></section>
+      <section id="hero">
+        <div
+          class="heroContentWrapper d-flex flex-column justify-content-center align-items-center position-relative"
+        >
+          <svg
+            width="180"
+            height="180"
+            fill="#a3bfe7"
+            class="bi bi-book"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M1 2.828c.885-.37 2.154-.769 3.388-.893 1.33-.134 2.458.063 3.112.752v9.746c-.935-.53-2.12-.603-3.213-.493-1.18.12-2.37.461-3.287.811V2.828zm7.5-.141c.654-.689 1.782-.886 3.112-.752 1.234.124 2.503.523 3.388.893v9.923c-.918-.35-2.107-.692-3.287-.81-1.094-.111-2.278-.039-3.213.492V2.687zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783z"
+            />
+          </svg>
+          <h1 class="text-center">LitSEa</h1>
+          <h2 class="text-center">
+            the uncovered sea of <strong>Southeast European literature</strong>
+          </h2>
+          <div
+            class="heroBtnWrapper position-absolute d-flex justify-content-center"
+          >
+            <button onclick="window.scrollBy(0, window.innerHeight)">
+              MORE ABOUT US
+            </button>
+          </div>
+        </div>
+      </section>
+
       <nav class="sticky-top">
         <div class="navbar navbar-expand-lg navbar-light container">
           <a class="navbar-brand" href="#"
-            ><i class="bi bi-book mr-2"></i>Publishing House</a
+            ><i class="bi bi-book mr-2"></i>LitSEa</a
           >
 
           <button
@@ -40,6 +68,9 @@
 
           <div class="collapse navbar-collapse" id="navbarDropdown">
             <ul class="navbar-nav mr-auto">
+              <li class="navbar-item">
+                <a class="nav-link" href="#info">Information</a>
+              </li>
               <li class="navbar-item">
                 <a class="nav-link" href="#community">Community</a>
               </li>
@@ -82,13 +113,13 @@
           </div>
         </div>
       </nav>
-      <section id="info">
+      <section id="info" class="my-5">
         <div class="container">
           <h1>Information</h1>
         </div>
       </section>
 
-      <section id="poems">
+      <section id="poems" class="mb-5">
         <div class="container">
           <h1>Poems</h1>
           <div class="row justify-content-center">
@@ -121,40 +152,24 @@
             </div>
 
             <div
-              class="poemCard col-10 col-md-5 mx-3 my-2 rounded p-3 d-flex flex-column justify-content-between"
+              id="poemCardToShow"
+              class="poemCard col-10 col-md-5 mx-3 my-2 rounded p-3 d-flex flex-column justify-content-between position-relative"
             >
-              <h6 class="title mb-2 mt-0">Appartenance</h6>
-              <div class="poemBody">
-                <p>Soleil, a qui est ton nom?</p>
-                <p>A quelle Galaxie,</p>
-                <p>a quelle Nation,</p>
-                <p>a quel peuple appartiens-tu?</p>
-                <br />
-                <p>Mais tu ne peux vraiment plus</p>
-                <p>roder comme ca de par le monde :</p>
-                <p>aujourd'hui a l'Est</p>
-                <p>et demain a l'Ouest !</p>
-                <br />
-                <p>Tu dois te decider</p>
-                <p>et enfin te declarer :</p>
-                <p>a qui tu es ?</p>
-                <br />
-                <p>Il faut nous tenir informes</p>
-                <p>En cas de ton deces,</p>
-                <p>ou allons nous t'enterrer ?</p>
-                <p>Dans quel pays,</p>
-                <p>dans quelle contree,</p>
-                <p>dans quel quartier ?</p>
+              <div class="input-group mb-3 ml-auto position-absolute">
+                <select
+                  class="custom-select"
+                  onchange="changePoemLang()"
+                  id="selectLangForPoem"
+                >
+                  <option selected>Select a language...</option>
+                  <option value="en">English</option>
+                  <option value="fr">French</option>
+                  <option value="du">Dutch</option>
+                  <option value="ar">Arabic</option>
+                </select>
               </div>
-              <h6 class="author mt-2 mb-0">
-                <span>Translation:</span> Svetlana Spaic
-              </h6>
-            </div>
-
-            <div
-              class="poemCard col-10 col-md-5 mx-3 my-2 rounded p-3 d-flex flex-column justify-content-between"
-            >
               <h6 class="title mb-2 mt-0">Belonging</h6>
+
               <div class="poemBody">
                 <p>Sun, whose name are you?</p>
                 <p>Which Galaxy,</p>
@@ -183,7 +198,38 @@
               </h6>
             </div>
 
-            <div
+            <!-- <div
+              class="poemCard col-10 col-md-5 mx-3 my-2 rounded p-3 d-flex flex-column justify-content-between"
+            >
+              <h6 class="title mb-2 mt-0">Appartenance</h6>
+              <div class="poemBody">
+                <p>Soleil, a qui est ton nom?</p>
+                <p>A quelle Galaxie,</p>
+                <p>a quelle Nation,</p>
+                <p>a quel peuple appartiens-tu?</p>
+                <br />
+                <p>Mais tu ne peux vraiment plus</p>
+                <p>roder comme ca de par le monde :</p>
+                <p>aujourd'hui a l'Est</p>
+                <p>et demain a l'Ouest !</p>
+                <br />
+                <p>Tu dois te decider</p>
+                <p>et enfin te declarer :</p>
+                <p>a qui tu es ?</p>
+                <br />
+                <p>Il faut nous tenir informes</p>
+                <p>En cas de ton deces,</p>
+                <p>ou allons nous t'enterrer ?</p>
+                <p>Dans quel pays,</p>
+                <p>dans quelle contree,</p>
+                <p>dans quel quartier ?</p>
+              </div>
+              <h6 class="author mt-2 mb-0">
+                <span>Translation:</span> Svetlana Spaic
+              </h6>
+            </div> -->
+
+            <!-- <div
               class="poemCard col-10 col-md-5 mx-3 my-2 rounded p-3 d-flex flex-column justify-content-between"
             >
               <h6 class="title mb-2 mt-0">Zon</h6>
@@ -211,9 +257,9 @@
               <h6 class="author mt-2 mb-0">
                 <span>Translation:</span> Lidy Maaz
               </h6>
-            </div>
+            </div> -->
 
-            <div
+            <!-- <div
               class="poemCard col-10 col-md-5 mx-3 my-2 rounded p-3 d-flex flex-column justify-content-between"
             >
               <h6 class="title mb-2 mt-0">شمس</h6>
@@ -239,12 +285,12 @@
               <h6 class="author mt-2 mb-0">
                 <span>Translation:</span> Fadi El Tofeili
               </h6>
-            </div>
+            </div> -->
           </div>
         </div>
       </section>
 
-      <section id="community">
+      <section id="community" class="mb-5">
         <div class="container">
           <h1>Community</h1>
           <div class="row justify-content-center">
