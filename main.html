@@ -21,59 +21,238 @@
   <body>
     <main>
       <section id="hero"></section>
-      <nav class="sticky-top navbar navbar-expand-lg navbar-light">
-        <a class="navbar-brand" href="#">LOGO Publishing House</a>
+      <nav class="sticky-top">
+        <div class="navbar navbar-expand-lg navbar-light container">
+          <a class="navbar-brand" href="#"
+            ><i class="bi bi-book mr-2"></i>Publishing House</a
+          >
 
-        <button
-          class="navbar-toggler px-1"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarDropdown"
-          aria-controls="navbarDropdown"
-          aria-expanded="false"
-        >
-          <span><i class="bi bi-list"></i></span>
-        </button>
+          <button
+            class="navbar-toggler px-1"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarDropdown"
+            aria-controls="navbarDropdown"
+            aria-expanded="false"
+          >
+            <span><i class="bi bi-list"></i></span>
+          </button>
 
-        <div class="collapse navbar-collapse" id="navbarDropdown">
-          <ul class="navbar-nav mr-auto">
-            <li class="navbar-item">
-              <a class="nav-link" href="#community">Community</a>
-            </li>
-          </ul>
-          <ul class="navbar-nav ml-auto">
-            <li class="navbar-item">
-              <a class="nav-link" type="button" onclick="changeLang(this)"
-                >English</a
-              >
-            </li>
-            <li class="navbar-item">
-              <a class="nav-link" type="button" onclick="changeLang(this)"
-                >French</a
-              >
-            </li>
-            <li class="navbar-item">
-              <a class="nav-link" type="button" onclick="changeLang(this)"
-                >German</a
-              >
-            </li>
-            <li class="navbar-item">
-              <a class="nav-link" type="button" onclick="changeLang(this)"
-                >Italian</a
-              >
-            </li>
-          </ul>
+          <div class="collapse navbar-collapse" id="navbarDropdown">
+            <ul class="navbar-nav mr-auto">
+              <li class="navbar-item">
+                <a class="nav-link" href="#community">Community</a>
+              </li>
+              <li class="navbar-item">
+                <a class="nav-link" href="#poems">Poems</a>
+              </li>
+            </ul>
+
+            <ul class="navbar-nav ml-auto language">
+              <li class="navbar-item">
+                <a class="nav-link" type="button" onclick="changeLang('en')"
+                  >English</a
+                >
+              </li>
+              <li class="navbar-item d-none d-lg-inline">
+                <span class="nav-link disabled">•</span>
+              </li>
+              <li class="navbar-item">
+                <a class="nav-link" type="button" onclick="changeLang('fr')"
+                  >French
+                </a>
+              </li>
+              <li class="navbar-item d-none d-lg-inline">
+                <span class="nav-link disabled">•</span>
+              </li>
+              <li class="navbar-item">
+                <a class="nav-link" type="button" onclick="changeLang('de')"
+                  >German</a
+                >
+              </li>
+              <li class="navbar-item d-none d-lg-inline">
+                <span class="nav-link disabled">•</span>
+              </li>
+              <li class="navbar-item">
+                <a class="nav-link" type="button" onclick="changeLang('it')"
+                  >Italian</a
+                >
+              </li>
+            </ul>
+          </div>
         </div>
       </nav>
       <section id="info">
-        <h1>INFO</h1>
+        <div class="container">
+          <h1>Information</h1>
+        </div>
       </section>
+
+      <section id="poems">
+        <div class="container">
+          <h1>Poems</h1>
+          <div class="row justify-content-center">
+            <div
+              class="poemCard col-10 col-md-5 mx-3 my-2 rounded p-3 d-flex flex-column justify-content-between"
+            >
+              <h6 class="title mb-2 mt-0">Pripadnost</h6>
+              <h2>Croatian</h2>
+              <div class="poemBody">
+                <p>Sunce,</p>
+                <p>čije si ti ime?</p>
+                <p>Kojoj galaksiji,</p>
+                <p>kojoj naciji,</p>
+                <p>kojem narodu pripadaš?</p>
+                <p>Pa ne možeš ti tako</p>
+                <p>po svijetu hodati:</p>
+                <p>danas na istoku,</p>
+                <p>sutra na zapadu.</p>
+                <p>Ti moraš da se odlučiš</p>
+                <p>čije si?</p>
+                <p>Da se izjasniš</p>
+                <p>konačno.</p>
+                <p>Mi to moramo znati:</p>
+                <p>u slučaju tvoje smrti</p>
+                <p>gdje ćemo te pokopati?</p>
+                <p>U kojoj zemlji?</p>
+                <p>U kojem kraju?</p>
+                <p>U kojoj četvrti?</p>
+              </div>
+              <h6 class="author mt-2 mb-0">Enes Kisević</h6>
+            </div>
+
+            <div
+              class="poemCard col-10 col-md-5 mx-3 my-2 rounded p-3 d-flex flex-column justify-content-between"
+            >
+              <h6 class="title mb-2 mt-0">Appartenance</h6>
+              <div class="poemBody">
+                <p>Soleil, a qui est ton nom?</p>
+                <p>A quelle Galaxie,</p>
+                <p>a quelle Nation,</p>
+                <p>a quel peuple appartiens-tu?</p>
+                <br />
+                <p>Mais tu ne peux vraiment plus</p>
+                <p>roder comme ca de par le monde :</p>
+                <p>aujourd'hui a l'Est</p>
+                <p>et demain a l'Ouest !</p>
+                <br />
+                <p>Tu dois te decider</p>
+                <p>et enfin te declarer :</p>
+                <p>a qui tu es ?</p>
+                <br />
+                <p>Il faut nous tenir informes</p>
+                <p>En cas de ton deces,</p>
+                <p>ou allons nous t'enterrer ?</p>
+                <p>Dans quel pays,</p>
+                <p>dans quelle contree,</p>
+                <p>dans quel quartier ?</p>
+              </div>
+              <h6 class="author mt-2 mb-0">
+                <span>Translation:</span> Svetlana Spaic
+              </h6>
+            </div>
+
+            <div
+              class="poemCard col-10 col-md-5 mx-3 my-2 rounded p-3 d-flex flex-column justify-content-between"
+            >
+              <h6 class="title mb-2 mt-0">Belonging</h6>
+              <div class="poemBody">
+                <p>Sun, whose name are you?</p>
+                <p>Which Galaxy,</p>
+                <p>which Nation,</p>
+                <p>which People do you belong to ?,</p>
+                <br />
+                <p>Well, you really cannot go on</p>
+                <p>roaming like this around the world :</p>
+                <p>today in the East,</p>
+                <p>and tomorrow the West!</p>
+                <br />
+                <p>You have to make up your mind,</p>
+                <p>And finally declare yourself:</p>
+                <p>Whose are you?</p>
+                <br />
+                <p>We need to know:</p>
+                <p>In case you die,</p>
+                <p>where are we to burry you?</p>
+                <br />
+                <p>In which country,</p>
+                <p>in which district,</p>
+                <p>in which neighbourhood?</p>
+              </div>
+              <h6 class="author mt-2 mb-0">
+                <span>Translation:</span> Svetlana Spaic
+              </h6>
+            </div>
+
+            <div
+              class="poemCard col-10 col-md-5 mx-3 my-2 rounded p-3 d-flex flex-column justify-content-between"
+            >
+              <h6 class="title mb-2 mt-0">Zon</h6>
+              <div class="poemBody">
+                <p>Zon, van wie is je naam ?</p>
+                <p>Tot welke Melkweg,</p>
+                <p>tot welke Natie</p>
+                <p>tot welk volk behoor je ?</p>
+                <br />
+                <p>Je kunt toch echt niet meer</p>
+                <p>zo rondzwerven door de wereld :</p>
+                <p>vandaag in het Oosten</p>
+                <p>en morgen in het Westen !</p>
+                <br />
+                <p>Je moet eindelijk een keuze maken:</p>
+                <p>van wie ben je ?</p>
+                <br />
+                <p>We moeten het weten.</p>
+                <p>In geval van je overlijden</p>
+                <p>waar gaan we je begraven ?</p>
+                <p>In welk land</p>
+                <p>in welke streek</p>
+                <p>in welke wijk ?</p>
+              </div>
+              <h6 class="author mt-2 mb-0">
+                <span>Translation:</span> Lidy Maaz
+              </h6>
+            </div>
+
+            <div
+              class="poemCard col-10 col-md-5 mx-3 my-2 rounded p-3 d-flex flex-column justify-content-between"
+            >
+              <h6 class="title mb-2 mt-0">شمس</h6>
+              <div class="poemBody">
+                <p>أيّتها الشمس</p>
+                <p>لمن اسمك؟</p>
+                <p>لأيّ بلاد تنتمين</p>
+                <p>لأيّ أمّة</p>
+                <p>لأيّ شعب؟</p>
+                <p>لا يمكنك أن تهيمي هكذا</p>
+                <p>في هذا العالم ..</p>
+                <p>يوم في الشرق</p>
+                <p>وآخر في الغرب</p>
+                <br />
+                <p>عليك في النهاية أن تختاري</p>
+                <p>لمن أنت ...</p>
+                <p>وعليك أن تعلمينا</p>
+                <p>إذ أين سنواريك غداً لو حلّ فناؤك</p>
+                <p>في أيّ بلاد</p>
+                <p>في أيّة محلّة</p>
+                <p>وفي أيّ حيّ؟</p>
+              </div>
+              <h6 class="author mt-2 mb-0">
+                <span>Translation:</span> Fadi El Tofeili
+              </h6>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section id="community">
-        <h1>Community</h1>
-        <div class="container-fluid">
-          <div class="row">
-            <div class="communityCard col-2 rounded m-3 position-relative">
-              <a href="">
+        <div class="container">
+          <h1>Community</h1>
+          <div class="row justify-content-center">
+            <div
+              class="communityCard col-10 col-sm-8 col-md-4 col-lg-3 col-xl-2 my-2 mx-3 rounded position-relative"
+            >
+              <a href="#community">
                 <div class="authorBadge d-none d-md-block position-absolute">
                   <span>Author</span>
                 </div>
@@ -82,13 +261,14 @@
                   style="background-image: url(http://placekitten.com/200/200)"
                 ></div>
                 <div class="communityCardBody d-flex flex-column p-2">
-                  <h4 class="communityName text-center">Author Name</h4>
-                  <!-- <button class="mx-auto">See more</button> -->
+                  <h5 class="communityName mx-auto my-0">Author Name</h5>
                 </div>
               </a>
             </div>
-            <div class="communityCard col-2 rounded m-3 position-relative">
-              <a href="">
+            <div
+              class="communityCard col-10 col-sm-8 col-md-4 col-lg-3 col-xl-2 my-2 mx-3 rounded position-relative"
+            >
+              <a href="#community">
                 <div
                   class="translatorBadge d-none d-md-block position-absolute"
                 >
@@ -99,13 +279,14 @@
                   style="background-image: url(http://placekitten.com/200/200)"
                 ></div>
                 <div class="communityCardBody d-flex flex-column p-2">
-                  <h4 class="communityName text-center">Translator Name</h4>
-                  <!-- <button class="mx-auto">See more</button> -->
+                  <h5 class="communityName mx-auto my-0">Translator Name</h5>
                 </div>
               </a>
             </div>
-            <div class="communityCard col-2 rounded m-3 position-relative">
-              <a href="">
+            <div
+              class="communityCard col-10 col-sm-8 col-md-4 col-lg-3 col-xl-2 my-2 mx-3 rounded position-relative"
+            >
+              <a href="#community">
                 <div
                   class="translatorBadge d-none d-md-block position-absolute"
                 >
@@ -116,8 +297,43 @@
                   style="background-image: url(http://placekitten.com/200/200)"
                 ></div>
                 <div class="communityCardBody d-flex flex-column p-2">
-                  <h4 class="communityName text-center">Poet Name</h4>
-                  <!-- <button class="mx-auto">See more</button> -->
+                  <h5 class="communityName mx-auto my-0">Poet Name</h5>
+                </div>
+              </a>
+            </div>
+            <div
+              class="communityCard col-10 col-sm-8 col-md-4 col-lg-3 col-xl-2 my-2 mx-3 rounded position-relative"
+            >
+              <a href="#community">
+                <div
+                  class="translatorBadge d-none d-md-block position-absolute"
+                >
+                  <span>Poet</span>
+                </div>
+                <div
+                  class="communityPhoto"
+                  style="background-image: url(http://placekitten.com/200/200)"
+                ></div>
+                <div class="communityCardBody d-flex flex-column p-2">
+                  <h5 class="communityName mx-auto my-0">Poet Name</h5>
+                </div>
+              </a>
+            </div>
+            <div
+              class="communityCard col-10 col-sm-8 col-md-4 col-lg-3 col-xl-2 my-2 mx-3 rounded position-relative"
+            >
+              <a href="#community">
+                <div
+                  class="translatorBadge d-none d-md-block position-absolute"
+                >
+                  <span>Poet</span>
+                </div>
+                <div
+                  class="communityPhoto"
+                  style="background-image: url(http://placekitten.com/200/200)"
+                ></div>
+                <div class="communityCardBody d-flex flex-column p-2">
+                  <h5 class="communityName mx-auto my-0">Poet Name</h5>
                 </div>
               </a>
             </div>
@@ -125,7 +341,7 @@
         </div>
       </section>
       <footer>
-        <div class="container-fluid">helo</div>
+        <div class="container">Footer</div>
       </footer>
     </main>
 
