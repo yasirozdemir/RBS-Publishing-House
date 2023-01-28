@@ -11,6 +11,11 @@ const en = {
   translator: "Translator",
   name: "Name",
   poet: "Poet",
+  shop: "Shop",
+  shortStories: "Short Stories",
+  novelExcerpts: "Novel Excerpts",
+  comments: "Comments",
+  contactUs: "Contact Us",
 };
 
 const fr = {
@@ -26,6 +31,11 @@ const fr = {
   translator: "Traductrice",
   name: "Nom",
   poet: "Poète",
+  shop: "Le Magasin",
+  shortStories: "La Nouvelle",
+  novelExcerpts: "Extraits de Roman",
+  comments: "Commentaires",
+  contactUs: "Nous Contacter",
 };
 
 const de = {
@@ -41,6 +51,11 @@ const de = {
   translator: "Übersetzer",
   name: "Nome",
   poet: "Dichter",
+  shop: "Das Geschäft",
+  shortStories: "Kurzgeschichten",
+  novelExcerpts: "Romanauszüge",
+  comments: "Bemerkungen",
+  contactUs: "Kontaktiere Uns ",
 };
 
 const it = {
@@ -56,13 +71,19 @@ const it = {
   translator: "Traduttore",
   name: "Nome",
   poet: "Poeta",
+  shop: "il Negozio",
+  shortStories: "Storie Brevi",
+  novelExcerpts: "Estratti di Romanzo",
+  comments: "Commenti",
+  contactUs: "Contattaci",
 };
+
+const urlParams = new URLSearchParams(location.search);
+const ID = urlParams.get("id");
 
 const poems = document.querySelector("#poems");
 const community = document.querySelector("#community");
-
-const query = new URLSearchParams();
-console.log(query);
+const info = document.querySelector("#info");
 
 window.onload = () => {
   document.querySelector("#selectLangForPoem").value = "Select a language...";
@@ -82,6 +103,13 @@ window.onload = () => {
         break;
     }
   }
+
+  if (ID === "info") {
+    poems.remove();
+    community.remove();
+  } else {
+    info.remove();
+  }
 };
 
 const changeLang = (language) => {
@@ -90,7 +118,6 @@ const changeLang = (language) => {
 };
 
 const setLang = (lang) => {
-  document.querySelectorAll(".navbar-nav a")[0].innerText = lang.information;
   document.querySelectorAll(".navbar-nav a")[1].innerText = lang.community;
   document.querySelector("#community h1").innerText = lang.community;
   document.querySelectorAll(".navbar-nav a")[2].innerText = lang.poems;
@@ -98,23 +125,45 @@ const setLang = (lang) => {
   document.querySelectorAll(".language a")[1].innerText = lang.french;
   document.querySelectorAll(".language a")[2].innerText = lang.german;
   document.querySelectorAll(".language a")[3].innerText = lang.italian;
-  document.querySelector("#info h1").innerText = lang.information;
   document.querySelector("#poems h1").innerText = lang.poems;
+  document.querySelectorAll("aside .list-group-item")[1].innerText =
+    lang.information;
+  document.querySelectorAll("aside .list-group-item")[2].innerText = lang.shop;
+  document.querySelectorAll("aside .list-group-item")[3].innerText =
+    lang.shortStories;
+  document.querySelectorAll("aside .list-group-item")[4].innerText =
+    lang.novelExcerpts;
+  document.querySelectorAll("aside .list-group-item")[5].innerText = lang.poems;
+  document.querySelectorAll("aside .list-group-item")[6].innerText =
+    lang.community;
+  document.querySelectorAll("aside .list-group-item")[7].innerText =
+    lang.comments;
+  document.querySelectorAll("aside .list-group-item")[8].innerText =
+    lang.contactUs;
   document.querySelectorAll(".poemCard .author span").forEach((el) => {
     el.innerText = lang.translation;
   });
   document.querySelectorAll(".communityName").forEach((el) => {
     switch (el.innerText) {
-      case "Author Name":
-        el.innerText = `${lang.author} ${lang.name}`;
+      case "Author":
+        el.innerText = lang.author;
         break;
-      case "Translator Name":
-        el.innerText = `${lang.translator} ${lang.name}`;
+      case "Translator":
+        el.innerText = lang.translator;
         break;
-      case "Poet Name":
-        el.innerText = `${lang.poet} ${lang.name}`;
+      case "Poet":
+        el.innerText = lang.poet;
         break;
     }
+  });
+  document.querySelectorAll(".authorBadge span").forEach((el) => {
+    el.innerText = lang.author;
+  });
+  document.querySelectorAll(".translatorBadge span").forEach((el) => {
+    el.innerText = lang.translator;
+  });
+  document.querySelectorAll(".poetBadge span").forEach((el) => {
+    el.innerText = lang.poet;
   });
 };
 

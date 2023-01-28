@@ -20,11 +20,15 @@
   </head>
   <body>
     <main>
-      <nav class="sticky-top">
-        <div class="navbar navbar-expand-lg navbar-light container-fluid">
-          <a class="navbar-brand" href="#"
-            ><i class="bi bi-book mr-2"></i>LitSEa</a
-          >
+      <nav class="fixed-top container-fluid">
+        <div class="navbar navbar-expand-lg navbar-light ">
+          <ul class="navbar-nav mr-auto">
+              <li class="navbar-item active">
+                <a class="nav-link" href="./main.html"><i class="bi bi-book"></i> LitSEa</a
+                >
+              </li>
+          </ul>
+          
 
           <button
             class="navbar-toggler px-1"
@@ -38,18 +42,6 @@
           </button>
 
           <div class="collapse navbar-collapse" id="navbarDropdown">
-            <ul class="navbar-nav mr-auto">
-              <li class="navbar-item">
-                <a class="nav-link" href="#information">Information</a>
-              </li>
-              <li class="navbar-item">
-                <a class="nav-link" href="#community">Community</a>
-              </li>
-              <li class="navbar-item">
-                <a class="nav-link" href="#poems">Poems</a>
-              </li>
-            </ul>
-
             <ul class="navbar-nav ml-auto language">
               <li class="navbar-item">
                 <a class="nav-link" type="button" onclick="changeLang('en')"
@@ -84,300 +76,381 @@
           </div>
         </div>
       </nav>
-      <section id="info" class="my-5">
-        <div class="container-fluid">
-          <h1>Information</h1>
-        </div>
-      </section>
 
-      <section id="poems" class="mb-5">
-        <div class="container-fluid">
-          <h1>Poems</h1>
-          <div class="row justify-content-center">
-            <div
-              class="poemCard col-10 col-md-3 mx-3 my-2 rounded p-3 d-flex flex-column justify-content-between"
-            >
-              <h6 class="title mb-2 mt-0">Pripadnost</h6>
-              <div class="poemBody">
-                <p>Sunce,</p>
-                <p>čije si ti ime?</p>
-                <p>Kojoj galaksiji,</p>
-                <p>kojoj naciji,</p>
-                <p>kojem narodu pripadaš?</p>
-                <p>Pa ne možeš ti tako</p>
-                <p>po svijetu hodati:</p>
-                <p>danas na istoku,</p>
-                <p>sutra na zapadu.</p>
-                <p>Ti moraš da se odlučiš</p>
-                <p>čije si?</p>
-                <p>Da se izjasniš</p>
-                <p>konačno.</p>
-                <p>Mi to moramo znati:</p>
-                <p>u slučaju tvoje smrti</p>
-                <p>gdje ćemo te pokopati?</p>
-                <p>U kojoj zemlji?</p>
-                <p>U kojem kraju?</p>
-                <p>U kojoj četvrti?</p>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-10">
+            <section id="info">
+              <div class="container-fluid h-100">
+                <div class="row h-100 justify-content-center align-items-center ">
+                  <div>
+                    <div>
+                      <h1>Information About Us</h1>
+                    <div class="col-10">
+                      <p class="p-3 rounded">LitSEa is a publishing house focused on the translation of 'small literatures' from the Southeast Europe. The main objective of LitSEa is to challenge existing stereotypes about the literature from the region and contribute to building a more inclusive world literature scene. To achieve that objective, our publishing house focuses on the translation of both the works of emerging and established writers from the local languages (Croatian, Serbian, Bosnian, Slovenian) to the most represented European languages (German, French, Italian, English).</p>
+                    </div>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <h6 class="author mt-2 mb-0">Enes Kisević</h6>
-            </div>
+            </section>
 
-            <div
-              id="poemCardToShow"
-              class="poemCard col-10 col-md-3 mx-3 my-2 rounded p-3 d-flex flex-column justify-content-between position-relative"
-            >
-              <div class="input-group mb-3 ml-auto position-absolute">
-                <select
-                  class="custom-select"
-                  onchange="changePoemLang()"
-                  id="selectLangForPoem"
-                >
-                  <option selected>Select a language...</option>
-                  <option value="en">English</option>
-                  <option value="fr">French</option>
-                  <option value="du">Dutch</option>
-                  <option value="ar">Arabic</option>
-                </select>
-              </div>
-              <h6 class="title mb-2 mt-0">Belonging</h6>
+            <section id="poems">
+              <div>
+                <h1>Poems</h1>
+                <div class="row justify-content-center">
+                  <div
+                    class="poemCard col-10 col-md-5 mx-3 my-2 rounded p-3 d-flex flex-column justify-content-between"
+                  >
+                    <h6 class="title mb-2 mt-0">Pripadnost</h6>
+                    <div class="poemBody">
+                      <p>Sunce,</p>
+                      <p>čije si ti ime?</p>
+                      <p>Kojoj galaksiji,</p>
+                      <p>kojoj naciji,</p>
+                      <p>kojem narodu pripadaš?</p>
+                      <p>Pa ne možeš ti tako</p>
+                      <p>po svijetu hodati:</p>
+                      <p>danas na istoku,</p>
+                      <p>sutra na zapadu.</p>
+                      <p>Ti moraš da se odlučiš</p>
+                      <p>čije si?</p>
+                      <p>Da se izjasniš</p>
+                      <p>konačno.</p>
+                      <p>Mi to moramo znati:</p>
+                      <p>u slučaju tvoje smrti</p>
+                      <p>gdje ćemo te pokopati?</p>
+                      <p>U kojoj zemlji?</p>
+                      <p>U kojem kraju?</p>
+                      <p>U kojoj četvrti?</p>
+                    </div>
+                    <h6 class="author mt-2 mb-0">Enes Kisević</h6>
+                  </div>
 
-              <div class="poemBody">
-                <p>Sun, whose name are you?</p>
-                <p>Which Galaxy,</p>
-                <p>which Nation,</p>
-                <p>which People do you belong to ?,</p>
-                <br />
-                <p>Well, you really cannot go on</p>
-                <p>roaming like this around the world :</p>
-                <p>today in the East,</p>
-                <p>and tomorrow the West!</p>
-                <br />
-                <p>You have to make up your mind,</p>
-                <p>And finally declare yourself:</p>
-                <p>Whose are you?</p>
-                <br />
-                <p>We need to know:</p>
-                <p>In case you die,</p>
-                <p>where are we to burry you?</p>
-                <br />
-                <p>In which country,</p>
-                <p>in which district,</p>
-                <p>in which neighbourhood?</p>
+                  <div
+                    id="poemCardToShow"
+                    class="poemCard col-10 col-md-5 mx-3 my-2 rounded p-3 d-flex flex-column justify-content-between position-relative"
+                  >
+                    <div class="input-group mb-3 ml-auto position-absolute">
+                      <select
+                        class="custom-select"
+                        onchange="changePoemLang()"
+                        id="selectLangForPoem"
+                      >
+                        <option selected>Select a language...</option>
+                        <option value="en">English</option>
+                        <option value="fr">French</option>
+                        <option value="du">Dutch</option>
+                        <option value="ar">Arabic</option>
+                      </select>
+                    </div>
+                    <h6 class="title mb-2 mt-0">Belonging</h6>
+
+                    <div class="poemBody">
+                      <p>Sun, whose name are you?</p>
+                      <p>Which Galaxy,</p>
+                      <p>which Nation,</p>
+                      <p>which People do you belong to ?,</p>
+                      <br />
+                      <p>Well, you really cannot go on</p>
+                      <p>roaming like this around the world :</p>
+                      <p>today in the East,</p>
+                      <p>and tomorrow the West!</p>
+                      <br />
+                      <p>You have to make up your mind,</p>
+                      <p>And finally declare yourself:</p>
+                      <p>Whose are you?</p>
+                      <br />
+                      <p>We need to know:</p>
+                      <p>In case you die,</p>
+                      <p>where are we to burry you?</p>
+                      <br />
+                      <p>In which country,</p>
+                      <p>in which district,</p>
+                      <p>in which neighbourhood?</p>
+                    </div>
+                    <h6 class="author mt-2 mb-0">
+                      <span>Translation:</span> Svetlana Spaic
+                    </h6>
+                  </div>
+                </div>
               </div>
-              <h6 class="author mt-2 mb-0">
-                <span>Translation:</span> Svetlana Spaic
-              </h6>
-            </div>
+            </section>
+
+            <section id="community" class="mb-3">
+              <div class="container-fluid">
+                <h1>Community</h1>
+                <div class="row justify-content-center">
+                  <div
+                    class="communityCard col-10 col-sm-2 col-md-2 col-lg-2 col-xl-1 my-2 mx-sm-2 mx-0 rounded position-relative"
+                  >
+                    <a href="#community">
+                      <div
+                        class="authorBadge d-none d-md-block position-absolute"
+                      >
+                        <span>Author</span>
+                      </div>
+                      <div
+                        class="communityPhoto"
+                        style="
+                          background-image: url(https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460__340.png);
+                        "
+                      ></div>
+                      <div class="communityCardBody d-flex flex-column p-2">
+                        <h5 class="communityName mx-auto my-0">Author</h5>
+                      </div>
+                    </a>
+                  </div>
+                  <div
+                    class="communityCard col-10 col-sm-2 col-md-2 col-lg-2 col-xl-1 my-2 mx-sm-2 mx-0 rounded position-relative"
+                  >
+                    <a href="#community">
+                      <div
+                        class="authorBadge d-none d-md-block position-absolute"
+                      >
+                        <span>Author</span>
+                      </div>
+                      <div
+                        class="communityPhoto"
+                        style="
+                          background-image: url(https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460__340.png);
+                        "
+                      ></div>
+                      <div class="communityCardBody d-flex flex-column p-2">
+                        <h5 class="communityName mx-auto my-0">Author</h5>
+                      </div>
+                    </a>
+                  </div>
+                  <div
+                    class="communityCard col-10 col-sm-2 col-md-2 col-lg-2 col-xl-1 my-2 mx-sm-2 mx-0 rounded position-relative"
+                  >
+                    <a href="#community">
+                      <div
+                        class="authorBadge d-none d-md-block position-absolute"
+                      >
+                        <span>Author</span>
+                      </div>
+                      <div
+                        class="communityPhoto"
+                        style="
+                          background-image: url(https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460__340.png);
+                        "
+                      ></div>
+                      <div class="communityCardBody d-flex flex-column p-2">
+                        <h5 class="communityName mx-auto my-0">Author</h5>
+                      </div>
+                    </a>
+                  </div>
+                  <div
+                    class="communityCard col-10 col-sm-2 col-md-2 col-lg-2 col-xl-1 my-2 mx-sm-2 mx-0 rounded position-relative"
+                  >
+                    <a href="#community">
+                      <div
+                        class="authorBadge d-none d-md-block position-absolute"
+                      >
+                        <span>Author</span>
+                      </div>
+                      <div
+                        class="communityPhoto"
+                        style="
+                          background-image: url(https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460__340.png);
+                        "
+                      ></div>
+                      <div class="communityCardBody d-flex flex-column p-2">
+                        <h5 class="communityName mx-auto my-0">Author</h5>
+                      </div>
+                    </a>
+                  </div>
+                  <div
+                    class="communityCard col-10 col-sm-2 col-md-2 col-lg-2 col-xl-1 my-2 mx-sm-2 mx-0 rounded position-relative"
+                  >
+                    <a href="#community">
+                      <div
+                        class="authorBadge d-none d-md-block position-absolute"
+                      >
+                        <span>Author</span>
+                      </div>
+                      <div
+                        class="communityPhoto"
+                        style="
+                          background-image: url(https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460__340.png);
+                        "
+                      ></div>
+                      <div class="communityCardBody d-flex flex-column p-2">
+                        <h5 class="communityName mx-auto my-0">Author</h5>
+                      </div>
+                    </a>
+                  </div>
+                  <div
+                    class="communityCard col-10 col-sm-2 col-md-2 col-lg-2 col-xl-1 my-2 mx-sm-2 mx-0 rounded position-relative"
+                  >
+                    <a href="#community">
+                      <div
+                        class="authorBadge d-none d-md-block position-absolute"
+                      >
+                        <span>Author</span>
+                      </div>
+                      <div
+                        class="communityPhoto"
+                        style="
+                          background-image: url(https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460__340.png);
+                        "
+                      ></div>
+                      <div class="communityCardBody d-flex flex-column p-2">
+                        <h5 class="communityName mx-auto my-0">Author</h5>
+                      </div>
+                    </a>
+                  </div>
+                  <div
+                    class="communityCard col-10 col-sm-2 col-md-2 col-lg-2 col-xl-1 my-2 mx-sm-2 mx-0m-0 mx-2 rounded position-relative"
+                  >
+                    <a href="#community">
+                      <div
+                        class="translatorBadge d-none d-md-block position-absolute"
+                      >
+                        <span>Translator</span>
+                      </div>
+                      <div
+                        class="communityPhoto"
+                        style="
+                          background-image: url(https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460__340.png);
+                        "
+                      ></div>
+                      <div class="communityCardBody d-flex flex-column p-2">
+                        <h5 class="communityName mx-auto my-0">Translator</h5>
+                      </div>
+                    </a>
+                  </div>
+                  <div
+                    class="communityCard col-10 col-sm-2 col-md-2 col-lg-2 col-xl-1 my-2 mx-sm-2 mx-0 rounded position-relative"
+                  >
+                    <a href="#community">
+                      <div
+                        class="poetBadge d-none d-md-block position-absolute"
+                      >
+                        <span>Poet</span>
+                      </div>
+                      <div
+                        class="communityPhoto"
+                        style="
+                          background-image: url(https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460__340.png);
+                        "
+                      ></div>
+                      <div class="communityCardBody d-flex flex-column p-2">
+                        <h5 class="communityName mx-auto my-0">Poet</h5>
+                      </div>
+                    </a>
+                  </div>
+                  <div
+                    class="communityCard col-10 col-sm-2 col-md-2 col-lg-2 col-xl-1 my-2 mx-sm-2 mx-0 rounded position-relative"
+                  >
+                    <a href="#community">
+                      <div
+                        class="poetBadge d-none d-md-block position-absolute"
+                      >
+                        <span>Poet</span>
+                      </div>
+                      <div
+                        class="communityPhoto"
+                        style="
+                          background-image: url(https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460__340.png);
+                        "
+                      ></div>
+                      <div class="communityCardBody d-flex flex-column p-2">
+                        <h5 class="communityName mx-auto my-0">Poet</h5>
+                      </div>
+                    </a>
+                  </div>
+                  <div
+                    class="communityCard col-10 col-sm-2 col-md-2 col-lg-2 col-xl-1 my-2 mx-sm-2 mx-0 rounded position-relative"
+                  >
+                    <a href="#community">
+                      <div
+                        class="poetBadge d-none d-md-block position-absolute"
+                      >
+                        <span>Poet</span>
+                      </div>
+                      <div
+                        class="communityPhoto"
+                        style="
+                          background-image: url(https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460__340.png);
+                        "
+                      ></div>
+                      <div class="communityCardBody d-flex flex-column p-2">
+                        <h5 class="communityName mx-auto my-0">Poet</h5>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <!-- <section id="comments" class="mb-5">
+              <div class="container-fluid">
+                <h1>Comments</h1>
+                <div class="row">Comments will show up here</div>
+              </div>
+            </section> -->
           </div>
-        </div>
-      </section>
 
-      <section id="community" class="mb-5">
-        <div class="container-fluid">
-          <h1>Community</h1>
-          <div class="row justify-content-center">
-            <div
-              class="communityCard col-10 col-sm-2 col-md-2 col-lg-2 col-xl-1 my-2 mx-2 rounded position-relative"
-            >
-              <a href="#community">
-                <div class="authorBadge d-none d-md-block position-absolute">
-                  <span>Author</span>
-                </div>
-                <div
-                  class="communityPhoto"
-                  style="
-                    background-image: url(https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460__340.png);
-                  "
-                ></div>
-                <div class="communityCardBody d-flex flex-column p-2">
-                  <h5 class="communityName mx-auto my-0">Author</h5>
-                </div>
-              </a>
-            </div>
-            <div
-              class="communityCard col-10 col-sm-2 col-md-2 col-lg-2 col-xl-1 my-2 mx-2 rounded position-relative"
-            >
-              <a href="#community">
-                <div class="authorBadge d-none d-md-block position-absolute">
-                  <span>Author</span>
-                </div>
-                <div
-                  class="communityPhoto"
-                  style="
-                    background-image: url(https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460__340.png);
-                  "
-                ></div>
-                <div class="communityCardBody d-flex flex-column p-2">
-                  <h5 class="communityName mx-auto my-0">Author</h5>
-                </div>
-              </a>
-            </div>
-            <div
-              class="communityCard col-10 col-sm-2 col-md-2 col-lg-2 col-xl-1 my-2 mx-2 rounded position-relative"
-            >
-              <a href="#community">
-                <div class="authorBadge d-none d-md-block position-absolute">
-                  <span>Author</span>
-                </div>
-                <div
-                  class="communityPhoto"
-                  style="
-                    background-image: url(https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460__340.png);
-                  "
-                ></div>
-                <div class="communityCardBody d-flex flex-column p-2">
-                  <h5 class="communityName mx-auto my-0">Author</h5>
-                </div>
-              </a>
-            </div>
-            <div
-              class="communityCard col-10 col-sm-2 col-md-2 col-lg-2 col-xl-1 my-2 mx-2 rounded position-relative"
-            >
-              <a href="#community">
-                <div class="authorBadge d-none d-md-block position-absolute">
-                  <span>Author</span>
-                </div>
-                <div
-                  class="communityPhoto"
-                  style="
-                    background-image: url(https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460__340.png);
-                  "
-                ></div>
-                <div class="communityCardBody d-flex flex-column p-2">
-                  <h5 class="communityName mx-auto my-0">Author</h5>
-                </div>
-              </a>
-            </div>
-            <div
-              class="communityCard col-10 col-sm-2 col-md-2 col-lg-2 col-xl-1 my-2 mx-2 rounded position-relative"
-            >
-              <a href="#community">
-                <div class="authorBadge d-none d-md-block position-absolute">
-                  <span>Author</span>
-                </div>
-                <div
-                  class="communityPhoto"
-                  style="
-                    background-image: url(https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460__340.png);
-                  "
-                ></div>
-                <div class="communityCardBody d-flex flex-column p-2">
-                  <h5 class="communityName mx-auto my-0">Author</h5>
-                </div>
-              </a>
-            </div>
-            <div
-              class="communityCard col-10 col-sm-2 col-md-2 col-lg-2 col-xl-1 my-2 mx-2 rounded position-relative"
-            >
-              <a href="#community">
-                <div class="authorBadge d-none d-md-block position-absolute">
-                  <span>Author</span>
-                </div>
-                <div
-                  class="communityPhoto"
-                  style="
-                    background-image: url(https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460__340.png);
-                  "
-                ></div>
-                <div class="communityCardBody d-flex flex-column p-2">
-                  <h5 class="communityName mx-auto my-0">Author</h5>
-                </div>
-              </a>
-            </div>
-            <div
-              class="communityCard col-10 col-sm-2 col-md-2 col-lg-2 col-xl-1 my-2 mx-sm-0 mx-2 rounded position-relative"
-            >
-              <a href="#community">
-                <div
-                  class="translatorBadge d-none d-md-block position-absolute"
+          <aside class="col-2 p-0 navbar-fixed-left">
+            <div class="list-group">
+              <div
+                class="list-group-item list-group-item-action rounded-0"
                 >
-                  <span>Translator</span>
-                </div>
-                <div
-                  class="communityPhoto"
-                  style="
-                    background-image: url(https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460__340.png);
-                  "
-                ></div>
-                <div class="communityCardBody d-flex flex-column p-2">
-                  <h5 class="communityName mx-auto my-0">Translator</h5>
-                </div>
-              </a>
-            </div>
-            <div
-              class="communityCard col-10 col-sm-2 col-md-2 col-lg-2 col-xl-1 my-2 mx-2 rounded position-relative"
-            >
-              <a href="#community">
-                <div
-                  class="translatorBadge d-none d-md-block position-absolute"
-                >
-                  <span>Poet</span>
-                </div>
-                <div
-                  class="communityPhoto"
-                  style="
-                    background-image: url(https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460__340.png);
-                  "
-                ></div>
-                <div class="communityCardBody d-flex flex-column p-2">
-                  <h5 class="communityName mx-auto my-0">Poet</h5>
-                </div>
-              </a>
-            </div>
-            <div
-              class="communityCard col-10 col-sm-2 col-md-2 col-lg-2 col-xl-1 my-2 mx-2 rounded position-relative"
-            >
-              <a href="#community">
-                <div
-                  class="translatorBadge d-none d-md-block position-absolute"
-                >
-                  <span>Poet</span>
-                </div>
-                <div
-                  class="communityPhoto"
-                  style="
-                    background-image: url(https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460__340.png);
-                  "
-                ></div>
-                <div class="communityCardBody d-flex flex-column p-2">
-                  <h5 class="communityName mx-auto my-0">Poet</h5>
-                </div>
-              </a>
-            </div>
-            <div
-              class="communityCard col-10 col-sm-2 col-md-2 col-lg-2 col-xl-1 my-2 mx-2 rounded position-relative"
-            >
-              <a href="#community">
-                <div
-                  class="translatorBadge d-none d-md-block position-absolute"
-                >
-                  <span>Poet</span>
-                </div>
-                <div
-                  class="communityPhoto"
-                  style="
-                    background-image: url(https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460__340.png);
-                  "
-                ></div>
-                <div class="communityCardBody d-flex flex-column p-2">
-                  <h5 class="communityName mx-auto my-0">Poet</h5>
-                </div>
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
+                 <form class="form-inline">
+                  <input class="searchInput form-control mr-sm-2 w-100" type="search" placeholder="Search">
+                </form>
 
-      <section id="comments" class="mb-5">
-        <div class="container-fluid">
-          <h1>Comments</h1>
-          <div class="row">Comments will show up here</div>
+                </div
+              >
+              <a
+                href="?id=info"
+                class="list-group-item list-group-item-action rounded-0"
+                ><i class="bi bi-info-circle"></i> Information</a
+              >
+              <a
+                href="./main.html"
+                class="list-group-item list-group-item-action rounded-0"
+                ><i class="bi bi-bag"></i> Shop</a
+              >
+              <a
+                href="./main.html"
+                class="list-group-item list-group-item-action rounded-0"
+                ><i class="bi bi-journal-text"></i> Short Stories</a
+              >
+              <a
+                href="./main.html"
+                class="list-group-item list-group-item-action rounded-0"
+                ><i class="bi bi-bookmark-star"></i> Novel Excerpts</a
+              >
+              <a
+                href="#poems"
+                class="list-group-item list-group-item-action rounded-0"
+                ><i class="bi bi-envelope-paper"></i> Poems</a
+              >
+              <a
+                href="./main.html#community"
+                class="list-group-item list-group-item-action rounded-0"
+                ></i><i class="bi bi-people"></i> Community</a
+              >
+              <a
+                href="./main.html#comments"
+                class="list-group-item list-group-item-action rounded-0"
+                ><i class="bi bi-chat-left-dots"></i> Comments</a
+              >
+              <a
+                href="./main.html"
+                class="list-group-item list-group-item-action rounded-0"
+                ><i class="bi bi-person-lines-fill"></i> Contact Us</a
+              >
+              <p class="p-4" style="text-indent: 20px">
+                      <strong>LitSEa</strong> is a small publishing house at the very beginning of its work. If you are interested in our future development and want to support us, feel free to reach out any time! All the comments and suggestions are appreciated and welcome.
+                    </p>
+            </div>
+          </aside>
         </div>
-      </section>
-
-      <footer>
-        <div class="container-fluid">Footer</div>
-      </footer>
+      </div>
     </main>
 
     <script src="./js/script.js"></script>

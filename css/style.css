@@ -19,7 +19,7 @@ body {
   font-family: var(--font-main);
   color: var(--text-color-main);
   user-select: none;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-weight: 600;
 }
 
@@ -89,10 +89,52 @@ a {
 
 nav {
   background-color: var(--section-color);
+  border: solid 1px var(--text-color-main);
+}
+
+aside {
+  background-color: var(--bg-secondary-color);
+  border-left: solid 1px var(--text-color-main);
+  border-right: solid 1px var(--text-color-main);
+  min-height: 100vh;
+}
+
+aside .list-group {
+  margin-top: 60px;
+}
+
+aside .list-group-item {
+  background: transparent;
+}
+
+aside .list-group-item:hover {
+  background-color: var(--body-color);
+}
+
+.searchInput {
+  background-color: transparent;
+  border: none;
+  color: var(--text-color-main);
+  box-shadow: 0px 0px 2px 0px var(--text-color-main);
 }
 
 #navbarDropdown {
   background-color: var(--section-color);
+}
+
+#info {
+  margin-top: 80px;
+  height: calc(100vh - 80px);
+}
+
+#info p {
+  text-indent: 20px;
+  font-size: 24px;
+  max-width: 700px;
+  -webkit-box-shadow: inset 0px 0px 5px 0px rgba(24, 29, 49, 1);
+  -moz-box-shadow: inset 0px 0px 5px 0px rgba(24, 29, 49, 1);
+  box-shadow: inset 0px 0px 5px 0px rgba(24, 29, 49, 1);
+  background-color: var(--bg-secondary-color);
 }
 
 .communityCard {
@@ -119,14 +161,16 @@ nav {
 }
 
 .authorBadge span,
-.translatorBadge span {
+.translatorBadge span,
+.poetBadge span {
   font-size: small;
   border-radius: 0.8rem;
   padding: 2px 8px;
 }
 
 .authorBadge span,
-.translatorBadge span {
+.translatorBadge span,
+.poetBadge span {
   background-color: #181d31;
   color: var(--bg-secondary-color);
 }
@@ -152,6 +196,10 @@ nav {
   .communityName {
     max-width: 80%;
   }
+}
+
+#poems {
+  margin-top: 80px;
 }
 
 .poemCard {
@@ -186,9 +234,4 @@ nav {
 .poemCard p {
   margin: 0;
   font-size: large;
-}
-
-footer {
-  background-color: var(--section-color);
-  height: 100px;
 }
