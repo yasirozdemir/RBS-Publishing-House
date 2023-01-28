@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Nunito:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Great+Vibes&display=swap");
 
 :root {
   --body-color: #e0e4ef;
@@ -7,7 +7,7 @@
   --text-color-main: #181d31;
   --shadow-main: #181d31ab;
   --text-color-secondary: #678983;
-  --font-main: "Nunito", sans-serif;
+  --font-main: "Cormorant Garamond", serif;
 }
 
 html {
@@ -19,6 +19,8 @@ body {
   font-family: var(--font-main);
   color: var(--text-color-main);
   user-select: none;
+  font-size: 1.5rem;
+  font-weight: 600;
 }
 
 h1,
@@ -44,13 +46,13 @@ a {
 #hero h1 {
   font-weight: 800;
   text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.75);
-  font-size: 128px;
+  font-size: 100px;
 }
 
 #hero h2 {
   font-family: "Dancing Script", cursive;
   text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.75);
-  font-size: 36px;
+  font-size: 26px;
 }
 
 #hero button {
@@ -129,7 +131,6 @@ nav {
 .authorBadge,
 .translatorBadge,
 .poetBadge {
-  top: 2px;
   left: 5px;
 }
 
@@ -159,7 +160,9 @@ nav {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
-  font-weight: 700;
+  font-size: 16px;
+  font-weight: 400;
+  max-width: 100%;
 }
 @media (max-width: 220px) {
   .communityName {

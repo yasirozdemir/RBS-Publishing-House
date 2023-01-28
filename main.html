@@ -35,9 +35,11 @@
               d="M1 2.828c.885-.37 2.154-.769 3.388-.893 1.33-.134 2.458.063 3.112.752v9.746c-.935-.53-2.12-.603-3.213-.493-1.18.12-2.37.461-3.287.811V2.828zm7.5-.141c.654-.689 1.782-.886 3.112-.752 1.234.124 2.503.523 3.388.893v9.923c-.918-.35-2.107-.692-3.287-.81-1.094-.111-2.278-.039-3.213.492V2.687zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783z"
             />
           </svg>
+
           <h1 class="text-center">LitSEa</h1>
           <h2 class="text-center">
-            the uncovered sea of <strong>Southeast European literature</strong>
+            the uncovered sea of
+            <strong>Southeast European literature</strong>
           </h2>
           <div
             class="heroBtnWrapper position-absolute d-flex justify-content-center"
@@ -50,7 +52,7 @@
       </section>
 
       <nav class="sticky-top">
-        <div class="navbar navbar-expand-lg navbar-light container">
+        <div class="navbar navbar-expand-lg navbar-light container-fluid">
           <a class="navbar-brand" href="#"
             ><i class="bi bi-book mr-2"></i>LitSEa</a
           >
@@ -69,7 +71,7 @@
           <div class="collapse navbar-collapse" id="navbarDropdown">
             <ul class="navbar-nav mr-auto">
               <li class="navbar-item">
-                <a class="nav-link" href="#info">Information</a>
+                <a class="nav-link" href="#information">Information</a>
               </li>
               <li class="navbar-item">
                 <a class="nav-link" href="#community">Community</a>
@@ -114,17 +116,17 @@
         </div>
       </nav>
       <section id="info" class="my-5">
-        <div class="container">
+        <div class="container-fluid">
           <h1>Information</h1>
         </div>
       </section>
 
       <section id="poems" class="mb-5">
-        <div class="container">
+        <div class="container-fluid">
           <h1>Poems</h1>
           <div class="row justify-content-center">
             <div
-              class="poemCard col-10 col-md-5 mx-3 my-2 rounded p-3 d-flex flex-column justify-content-between"
+              class="poemCard col-10 col-md-3 mx-3 my-2 rounded p-3 d-flex flex-column justify-content-between"
             >
               <h6 class="title mb-2 mt-0">Pripadnost</h6>
               <div class="poemBody">
@@ -153,7 +155,7 @@
 
             <div
               id="poemCardToShow"
-              class="poemCard col-10 col-md-5 mx-3 my-2 rounded p-3 d-flex flex-column justify-content-between position-relative"
+              class="poemCard col-10 col-md-3 mx-3 my-2 rounded p-3 d-flex flex-column justify-content-between position-relative"
             >
               <div class="input-group mb-3 ml-auto position-absolute">
                 <select
@@ -199,7 +201,7 @@
             </div>
 
             <!-- <div
-              class="poemCard col-10 col-md-5 mx-3 my-2 rounded p-3 d-flex flex-column justify-content-between"
+              class="poemCard col-10 col-md-3 mx-3 my-2 rounded p-3 d-flex flex-column justify-content-between"
             >
               <h6 class="title mb-2 mt-0">Appartenance</h6>
               <div class="poemBody">
@@ -230,7 +232,7 @@
             </div> -->
 
             <!-- <div
-              class="poemCard col-10 col-md-5 mx-3 my-2 rounded p-3 d-flex flex-column justify-content-between"
+              class="poemCard col-10 col-md-3 mx-3 my-2 rounded p-3 d-flex flex-column justify-content-between"
             >
               <h6 class="title mb-2 mt-0">Zon</h6>
               <div class="poemBody">
@@ -260,7 +262,7 @@
             </div> -->
 
             <!-- <div
-              class="poemCard col-10 col-md-5 mx-3 my-2 rounded p-3 d-flex flex-column justify-content-between"
+              class="poemCard col-10 col-md-3 mx-3 my-2 rounded p-3 d-flex flex-column justify-content-between"
             >
               <h6 class="title mb-2 mt-0">شمس</h6>
               <div class="poemBody">
@@ -291,11 +293,11 @@
       </section>
 
       <section id="community" class="mb-5">
-        <div class="container">
+        <div class="container-fluid">
           <h1>Community</h1>
           <div class="row justify-content-center">
             <div
-              class="communityCard col-10 col-sm-8 col-md-4 col-lg-3 col-xl-2 my-2 mx-3 rounded position-relative"
+              class="communityCard col-10 col-sm-2 col-md-2 col-lg-2 col-xl-1 my-2 mx-2 rounded position-relative"
             >
               <a href="#community">
                 <div class="authorBadge d-none d-md-block position-absolute">
@@ -303,15 +305,107 @@
                 </div>
                 <div
                   class="communityPhoto"
-                  style="background-image: url(http://placekitten.com/200/200)"
+                  style="
+                    background-image: url(https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460__340.png);
+                  "
                 ></div>
                 <div class="communityCardBody d-flex flex-column p-2">
-                  <h5 class="communityName mx-auto my-0">Author Name</h5>
+                  <h5 class="communityName mx-auto my-0">Author</h5>
                 </div>
               </a>
             </div>
             <div
-              class="communityCard col-10 col-sm-8 col-md-4 col-lg-3 col-xl-2 my-2 mx-3 rounded position-relative"
+              class="communityCard col-10 col-sm-2 col-md-2 col-lg-2 col-xl-1 my-2 mx-2 rounded position-relative"
+            >
+              <a href="#community">
+                <div class="authorBadge d-none d-md-block position-absolute">
+                  <span>Author</span>
+                </div>
+                <div
+                  class="communityPhoto"
+                  style="
+                    background-image: url(https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460__340.png);
+                  "
+                ></div>
+                <div class="communityCardBody d-flex flex-column p-2">
+                  <h5 class="communityName mx-auto my-0">Author</h5>
+                </div>
+              </a>
+            </div>
+            <div
+              class="communityCard col-10 col-sm-2 col-md-2 col-lg-2 col-xl-1 my-2 mx-2 rounded position-relative"
+            >
+              <a href="#community">
+                <div class="authorBadge d-none d-md-block position-absolute">
+                  <span>Author</span>
+                </div>
+                <div
+                  class="communityPhoto"
+                  style="
+                    background-image: url(https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460__340.png);
+                  "
+                ></div>
+                <div class="communityCardBody d-flex flex-column p-2">
+                  <h5 class="communityName mx-auto my-0">Author</h5>
+                </div>
+              </a>
+            </div>
+            <div
+              class="communityCard col-10 col-sm-2 col-md-2 col-lg-2 col-xl-1 my-2 mx-2 rounded position-relative"
+            >
+              <a href="#community">
+                <div class="authorBadge d-none d-md-block position-absolute">
+                  <span>Author</span>
+                </div>
+                <div
+                  class="communityPhoto"
+                  style="
+                    background-image: url(https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460__340.png);
+                  "
+                ></div>
+                <div class="communityCardBody d-flex flex-column p-2">
+                  <h5 class="communityName mx-auto my-0">Author</h5>
+                </div>
+              </a>
+            </div>
+            <div
+              class="communityCard col-10 col-sm-2 col-md-2 col-lg-2 col-xl-1 my-2 mx-2 rounded position-relative"
+            >
+              <a href="#community">
+                <div class="authorBadge d-none d-md-block position-absolute">
+                  <span>Author</span>
+                </div>
+                <div
+                  class="communityPhoto"
+                  style="
+                    background-image: url(https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460__340.png);
+                  "
+                ></div>
+                <div class="communityCardBody d-flex flex-column p-2">
+                  <h5 class="communityName mx-auto my-0">Author</h5>
+                </div>
+              </a>
+            </div>
+            <div
+              class="communityCard col-10 col-sm-2 col-md-2 col-lg-2 col-xl-1 my-2 mx-2 rounded position-relative"
+            >
+              <a href="#community">
+                <div class="authorBadge d-none d-md-block position-absolute">
+                  <span>Author</span>
+                </div>
+                <div
+                  class="communityPhoto"
+                  style="
+                    background-image: url(https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460__340.png);
+                  "
+                ></div>
+                <div class="communityCardBody d-flex flex-column p-2">
+                  <h5 class="communityName mx-auto my-0">Author</h5>
+                </div>
+              </a>
+            </div>
+            <div
+              class="communityCard col-10 col-sm-2 col-md-2 col-lg-2 col-xl-1 my-2 mx-sm-0 mx-2 rounded position-relative"
             >
               <a href="#community">
                 <div
@@ -321,15 +415,17 @@
                 </div>
                 <div
                   class="communityPhoto"
-                  style="background-image: url(http://placekitten.com/200/200)"
+                  style="
+                    background-image: url(https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460__340.png);
+                  "
                 ></div>
                 <div class="communityCardBody d-flex flex-column p-2">
-                  <h5 class="communityName mx-auto my-0">Translator Name</h5>
+                  <h5 class="communityName mx-auto my-0">Translator</h5>
                 </div>
               </a>
             </div>
             <div
-              class="communityCard col-10 col-sm-8 col-md-4 col-lg-3 col-xl-2 my-2 mx-3 rounded position-relative"
+              class="communityCard col-10 col-sm-2 col-md-2 col-lg-2 col-xl-1 my-2 mx-2 rounded position-relative"
             >
               <a href="#community">
                 <div
@@ -339,15 +435,17 @@
                 </div>
                 <div
                   class="communityPhoto"
-                  style="background-image: url(http://placekitten.com/200/200)"
+                  style="
+                    background-image: url(https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460__340.png);
+                  "
                 ></div>
                 <div class="communityCardBody d-flex flex-column p-2">
-                  <h5 class="communityName mx-auto my-0">Poet Name</h5>
+                  <h5 class="communityName mx-auto my-0">Poet</h5>
                 </div>
               </a>
             </div>
             <div
-              class="communityCard col-10 col-sm-8 col-md-4 col-lg-3 col-xl-2 my-2 mx-3 rounded position-relative"
+              class="communityCard col-10 col-sm-2 col-md-2 col-lg-2 col-xl-1 my-2 mx-2 rounded position-relative"
             >
               <a href="#community">
                 <div
@@ -357,15 +455,17 @@
                 </div>
                 <div
                   class="communityPhoto"
-                  style="background-image: url(http://placekitten.com/200/200)"
+                  style="
+                    background-image: url(https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460__340.png);
+                  "
                 ></div>
                 <div class="communityCardBody d-flex flex-column p-2">
-                  <h5 class="communityName mx-auto my-0">Poet Name</h5>
+                  <h5 class="communityName mx-auto my-0">Poet</h5>
                 </div>
               </a>
             </div>
             <div
-              class="communityCard col-10 col-sm-8 col-md-4 col-lg-3 col-xl-2 my-2 mx-3 rounded position-relative"
+              class="communityCard col-10 col-sm-2 col-md-2 col-lg-2 col-xl-1 my-2 mx-2 rounded position-relative"
             >
               <a href="#community">
                 <div
@@ -375,18 +475,28 @@
                 </div>
                 <div
                   class="communityPhoto"
-                  style="background-image: url(http://placekitten.com/200/200)"
+                  style="
+                    background-image: url(https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460__340.png);
+                  "
                 ></div>
                 <div class="communityCardBody d-flex flex-column p-2">
-                  <h5 class="communityName mx-auto my-0">Poet Name</h5>
+                  <h5 class="communityName mx-auto my-0">Poet</h5>
                 </div>
               </a>
             </div>
           </div>
         </div>
       </section>
+
+      <section id="comments" class="mb-5">
+        <div class="container-fluid">
+          <h1>Comments</h1>
+          <div class="row">Comments will show up here</div>
+        </div>
+      </section>
+
       <footer>
-        <div class="container">Footer</div>
+        <div class="container-fluid">Footer</div>
       </footer>
     </main>
 

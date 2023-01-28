@@ -58,6 +58,12 @@ const it = {
   poet: "Poeta",
 };
 
+const poems = document.querySelector("#poems");
+const community = document.querySelector("#community");
+
+const query = new URLSearchParams();
+console.log(query);
+
 window.onload = () => {
   document.querySelector("#selectLangForPoem").value = "Select a language...";
   if (window.location.hash) {
